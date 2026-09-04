@@ -1,0 +1,61 @@
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# ============================================================
+# Datasets (never commit raw or processed audio/feature data)
+# ============================================================
+data/raw/
+data/processed/
+*.flac
+*.wav
+
+# ============================================================
+# Model checkpoints & large generated artifacts
+# ============================================================
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.pkl
+outputs/models/*
+!outputs/models/.gitkeep
+outputs/figures/*
+!outputs/figures/.gitkeep
+*.zip
+
+# Allow small tracked reference outputs if you choose to add any:
+# !outputs/figures/sample_confusion_matrix.png
+
+# ============================================================
+# Submission / logs
+# ============================================================
+submission.csv
+*.log
+
+# ============================================================
+# Kaggle credentials (never commit)
+# ============================================================
+kaggle.json
+.kaggle/
+
+# ============================================================
+# Editor / OS
+# ============================================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

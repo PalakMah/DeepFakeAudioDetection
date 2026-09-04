@@ -1,0 +1,25 @@
+# Core numerics / data
+numpy
+pandas
+scipy
+scikit-learn
+
+# Audio processing & feature extraction
+librosa==0.10.2
+soundfile
+audiomentations
+spafe
+praat-parselmouth
+
+# Deep learning
+torch
+torchmetrics
+transformers
+sentencepiece
+
+# Speaker memory bank (similarity search)
+faiss-cpu
+
+# Progress bars & plotting
+tqdm
+matplotlib
