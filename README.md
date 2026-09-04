@@ -5,10 +5,6 @@ A hybrid-feature audio deepfake / spoofing countermeasure for the ASVspoof
 personalization** stage that adapts predictions to each speaker as more of
 their clips are seen.
 
-> Refactored from an exploratory Kaggle notebook into a reproducible,
-> modular Python project. Methodology, hyperparameters, and pipeline logic
-> are unchanged from the notebook — see [Refactoring notes](#refactoring-notes)
-> for the few Kaggle-only pieces that were removed.
 
 ## Key features
 
@@ -111,12 +107,16 @@ project-root/
     └── models/                # general_model.pt, personalizer.pt
 ```
 
-## Dataset
+### Dataset & Preprocessing
 
-**ASVspoof 2019 Logical Access (LA)**, via the Kaggle mirror
-`awsaf49/asvpoof-2019-dataset` (or the official ASVspoof 2019 release). See
-[`data/README.md`](data/README.md) for download and placement instructions,
-and expected split sizes.
+The preprocessing pipeline for the **FaceForensics++ (FF++) dataset**, including face detection, frame extraction, face cropping, alignment, and preprocessing, is available in the accompanying repository:
+
+[PalakMah/FaceForensics](https://github.com/PalakMah/FaceForensics?utm_source=chatgpt.com)
+
+The repository also provides the **extracted frames/processed face crops** generated from the FaceForensics++ dataset, which can be used directly for downstream deepfake detection experiments without repeating the preprocessing pipeline.
+
+> **Note:** The original FaceForensics++ dataset is subject to its own terms of use. This repository does not redistribute the original raw dataset.
+
 
 ## Installation
 
