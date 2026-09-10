@@ -46,15 +46,15 @@ Cached .pt feature files (data/processed/hybrid_features/)  │
       │                                                     │
       ▼                                                     │
 ┌─────────────────────────┐                                 │
-│  General Detector        │  gated fusion → MLP → 256-d    │
-│  (CE + speaker triplet)  │  embedding → 2-way classifier  │
+│  General Detector       │  gated fusion → MLP → 256-d     │
+│  (CE + speaker triplet) │  embedding → 2-way classifier   │
 └─────────────────────────┘                                 │
       │ embeddings                                          │
       ▼                                                     │
 ┌─────────────────────────┐                                 │
-│  Speaker Memory Bank      │  quality scoring, confidence  │
-│  + Personalization Head   │  gating, aging, K-means       │
-│  (cross-attention)        │  compression, adaptive top-K  │
+│  Speaker Memory Bank    │  quality scoring, confidence    │
+│  + Personalization Head │  gating, aging, K-means         │
+│  (cross-attention)      │  compression, adaptive top-K    │
 └─────────────────────────┘                                 │
       │                                                     │
       ▼                                                     │
