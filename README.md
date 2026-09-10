@@ -1,4 +1,4 @@
-# Speaker-Personalized Audio Spoof Detection (ASVspoof 2019 LA)
+# Speaker-Personalized Audio Spoof Detection (ASVspoof 2019)
 
 A hybrid-feature audio deepfake / spoofing countermeasure for the ASVspoof
 2019 Logical Access (LA) task, extended with an **online speaker-memory
