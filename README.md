@@ -277,7 +277,7 @@ The resumability that mattered (skipping already-extracted files on
 re-run) is preserved unchanged in `src/features/extraction_pipeline.py`,
 now checkpointed against the local filesystem instead of a Kaggle Dataset.
 
-### Ambiguities / assumptions
+## Ambiguities / assumptions
 
 - Two versions of `ASVSpoofDataset` existed in the notebook (an earlier
   draft and a refined version that added a file-existence check and used
