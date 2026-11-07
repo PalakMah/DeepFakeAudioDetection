@@ -276,13 +276,3 @@ The resumability that mattered (skipping already-extracted files on
 re-run) is preserved unchanged in `src/features/extraction_pipeline.py`,
 now checkpointed against the local filesystem instead of a Kaggle Dataset.
 
-## Ambiguities / assumptions
-
-- Two versions of `ASVSpoofDataset` existed in the notebook (an earlier
-  draft and a refined version that added a file-existence check and used
-  `random.randint`/`reset_index`). The refined, later-defined version was
-  taken as canonical, since it is what the rest of the notebook actually
-  executed against.
-- `push_checkpoint_to_dataset` and the associated Kaggle-dataset restore
-  cells were dropped rather than reimplemented against a generic remote
-  store, since no such destination was specified in the notebook.
